@@ -1,4 +1,8 @@
 package com.areca.test.repository;
 
-public class AuthorRepository {
+import com.areca.test.model.Author;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AuthorRepository extends JpaRepository<Author, Long> {
+
 }
